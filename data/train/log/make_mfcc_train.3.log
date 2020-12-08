@@ -1,0 +1,339 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:data/train/log/utt2dur.3 --verbose=2 --config=conf/mfcc.conf scp,p:data/train/log/wav_train.3.scp ark:- | copy-feats --write-num-frames=ark,t:data/train/log/utt2num_frames.3 --compress=true ark:- ark,scp:/home/peter/Documents/kaldi/egs/digits/data/train/data/raw_mfcc_train.3.ark,/home/peter/Documents/kaldi/egs/digits/data/train/data/raw_mfcc_train.3.scp 
+# Started at Tue Dec  8 12:41:37 GMT 2020
+#
+copy-feats --write-num-frames=ark,t:data/train/log/utt2num_frames.3 --compress=true ark:- ark,scp:/home/peter/Documents/kaldi/egs/digits/data/train/data/raw_mfcc_train.3.ark,/home/peter/Documents/kaldi/egs/digits/data/train/data/raw_mfcc_train.3.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:data/train/log/utt2dur.3 --verbose=2 --config=conf/mfcc.conf scp,p:data/train/log/wav_train.3.scp ark:- 
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_0
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_1
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_2
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_3
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_4
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_5
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_6
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_7
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_8
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_3_9
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_0
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_1
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_2
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_3
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_4
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_5
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_6
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_7
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_8
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance nicolas_4_9
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_0
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_1
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_2
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_3
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_4
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_5
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_6
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_7
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_8
+ERROR (compute-mfcc-feats[5.5.846~1-a7c42]:ComputeFeatures():feat/feature-common-inl.h:47) Waveform and config sample Frequency mismatch: 8000 .vs 16000 (use --allow-upsample=true option to allow  upsampling the waveform).
+
+[ Stack-Trace: ]
+/home/peter/Documents/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7f30846a8183]
+compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x55c33dbf6bc5]
+compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x25c) [0x55c33dc03efa]
+compute-mfcc-feats(main+0xbc7) [0x55c33dbf4bb0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f30842a10b3]
+compute-mfcc-feats(_start+0x2e) [0x55c33dbf3f2e]
+
+WARNING (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance theo_0_9
+LOG (compute-mfcc-feats[5.5.846~1-a7c42]:main():compute-mfcc-feats.cc:185)  Done 0 out of 30 utterances.
+LOG (copy-feats[5.5.846~1-a7c42]:main():copy-feats.cc:143) Copied 0 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 1) at Tue Dec  8 12:41:37 GMT 2020, elapsed time 0 seconds
